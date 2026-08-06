@@ -1,0 +1,60 @@
+
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+    --font-Montserrat: "Montserrat", sans-serif;
+    --color-col-ff: #FFFFFF;
+    --color-col-25: #252B42;
+    --color-col-ffa: #FFA62B;
+    --color-col-73: #737373;
+
+
+}
+
+@layer base {
+    
+    nav {
+        @apply hidden lg:flex lg:items-center lg:justify-between;
+    }
+   ul {
+    @apply flex flex-col lg:flex-row  items-center gap-[21px];
+   } 
+    a {
+      @apply  text-[30px] font-normal leading-12 text-col-73 lg:text-col-ff lg:text-[14px] lg:font-semibold  lg:leading-6 ;
+    }
+    h1 {
+        @apply text-[40px]  lg:text-[58px] leading-14 lg:leading-20 font-bold lg:font-extrabold text-col-ff tracking-[0.2px];
+    }
+
+h2 {
+    @apply text-[40px] font-bold leading-14;
+}
+h3 {
+    
+    @apply text-[24px]  leading-8 font-bold text-col-25;
+}
+h4 {
+    @apply text-[20px] font-medium text-col-ff leading-[1.875rem]  tracking-[0.2px];
+}
+h5 {
+    @apply text-[16px]  leading-6;
+
+}
+span {
+    @apply text-[14px] font-bold leading-7 text-col-ff;
+}
+h6 {
+    @apply text-[14px] ;
+}
+p {
+    @apply text-[14px] font-medium leading-5;
+}
+
+}
+
+@layer components {
+    .my-container {
+        @apply max-w-[380px] lg:max-w-[1050px] mx-auto px-4;
+    }
+} 
