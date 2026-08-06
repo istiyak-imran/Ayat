@@ -5,7 +5,7 @@
   }
 ,
 "scripts": {
-  "dev":"npx tailwindcss -i ./Css/input.css -o ./src/output.css --watch"
+  "dev":"npx @tailwindcss/cli -i ./Css/input.css -o ./src/output.css --watch"
     
   }
 
