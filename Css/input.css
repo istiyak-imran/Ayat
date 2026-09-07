@@ -55,6 +55,6 @@ p {
 
 @layer components {
     .my-container {
-        @apply max-w-[380px] lg:max-w-[1050px] mx-auto px-4;
+        @apply max-w-[380px] lg:max-w-[1050px] mx-auto px-6 lg:px-0;
     }
 } 
